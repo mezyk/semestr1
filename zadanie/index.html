@@ -3,16 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Strona główna</title>
 </head>
 <body>
+   <header>
     <nav>
         <ul>
             <li><a href="./cytat/index.html">O mnie</a></li>
             <li><a href="./kontakt/index.html">Kontakt</a></li>
         </ul>
     </nav>
-    <h1>Strona główna</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis molestias magnam eius natus a magni fuga velit error? Molestias ad tempore consequatur, facere a eligendi? Saepe cumque eos quod?</p>
+   </header> 
+
+    <main>
+        <section>
+            <h1>Strona główna</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis molestias magnam eius natus a magni fuga velit error? Molestias ad tempore consequatur, facere a eligendi? Saepe cumque eos quod?</p>
+        </section>  
+        
+        <form action="/submit" method="post">
+            <div>
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" required>
+            </div>
+            <div>
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko" required>
+            </div>
+            <div>
+                <label for="telefon">Nr telefonu:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="wiadomosc">Wiadomość:</label>
+                <textarea id="wiadomosc" name="wiadomosc" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="kraj">Wybierz kraj:</label>
+                <select id="kraj" name="kraj" required>
+                    <option value="Polska">Polska</option>
+                    <option value="Niemcy">Niemcy</option>
+                    <option value="Francja">Francja</option>
+                    <option value="Włochy">Włochy</option>
+                    <option value="Wielka Brytania">Wielka Brytania</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="regulamin" name="regulamin" required>
+                <label for="regulamin">Akceptuję regulamin</label>
+            </div>
+            <div>
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>Copyrights 2024</footer>
+
 </body>
 </html>
